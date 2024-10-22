@@ -1,8 +1,8 @@
 const btnBeginGame = document.getElementById('begin-game'); // Кнопка "Начать игру" на главном экране
 
-const audioEndGame = new Audio('../audio/endGame.mp3'); // звук gameover игры
-const scorePlus = new Audio('../audio/score+.mp3'); // звук увеличения счёта
-const gameMusic = new Audio('../audio/game.mp3'); // музыка во время игры
+const audioEndGame = new Audio('audio/endGame.mp3'); // звук gameover игры
+const scorePlus = new Audio('audio/score+.mp3'); // звук увеличения счёта
+const gameMusic = new Audio('audio/game.mp3'); // музыка во время игры
 
 
 let score = 0;
