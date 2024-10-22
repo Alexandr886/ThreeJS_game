@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    color: #FFF;
+}
+
+#begin-game {
+    position: absolute;
+    font-size: 4rem;
+    color: #FFF;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#begin-game:hover {
+    transform: translateX(50px);
+}
+
+#begin-game.hidden {
+    display: none;
+}
+
+#game {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#score {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 2rem;
+    display: none;
+}
+
+#modal-game-over {
+    position: absolute;
+    flex-direction: column;
+    gap: 3rem;
+    border: 1px solid #FFF;
+    border-radius: 2rem;
+    background: lightgray;
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    color: black;
+    display: none;
+}
+
+#modal-game-over.active {
+    display: flex;
+}
+
+.btn {
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background: green;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#music-control {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    left: 1rem;
+    display: none;
+}

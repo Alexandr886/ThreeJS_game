@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game</title>
+</head>
+<body>
+    <div id="game">
+        <div id="modal-game-over">
+            <h2>Игра окончена!</h2>
+            <p>Ваш счёт: <span id="total-score"></span></p>
+            <button class="btn" id="game-start-over">Ещё раз</button>
+        </div>
+        <button id="begin-game">Начать игру</button>
+    </div>
+    <div id="score">Счёт: 0</div>
+    <div id="music-control">Вкл/Откл музыку: M</div>
+    <audio controls src="audio/endGame.mp3"></audio>
+
+
+
+    <script src="scripts/three.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
